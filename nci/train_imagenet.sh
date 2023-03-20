@@ -35,6 +35,10 @@ cd ${PBS_JOBFS}/imagenet/ImageNet2012/val && bash ./imagenet-build-val-folder.sh
 echo "[$(date)] - Build val folder done"
 
 
+# show the dataset dir tree
+tree -d ${PBS_JOBFS}/imagenet
+
+
 
 # train
 DATASET="imagenet"
@@ -46,5 +50,6 @@ SEED=0
 
 
 cd /scratch/li96/lt2442/DualFocalLoss
-python3 train.py --dataset ${DATASET} --dataset-root= ${DATA_ROOT} --model ${MODEL} --loss ${LOSS} --gamma ${GAMMA} --num_bins 15 -e 350 --seed ${SEED} --save-path exp/${DATASET}_${MODEL}_${LOSS}_gamma${GAMMA}_seed${SEED}
+python3 train.py --dataset ${DATASET} --dataset-root ${DATA_ROOT} --model ${MODEL} --loss ${LOSS} --gamma ${GAMMA} --num_bins 15 -e 350 --seed ${SEED} --save-path exp/${DATASET}_${MODEL}_${LOSS}_gamma${GAMMA}_seed${SEED}
+# python3 train.py --dataset imagenet --dataset-root=./data/imagenet-mini --model resnet50 --loss dual_focal_loss --gamma 5 --num_bins 15 -e 350 --seed 0 --save-path exp/imagenet_test
 

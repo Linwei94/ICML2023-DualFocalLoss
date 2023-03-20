@@ -241,6 +241,8 @@ if __name__ == "__main__":
 
     # Choosing the model to train
     net = models[args.model](num_classes=num_classes)
+    if args.dataset == 'imagenet':
+        net = torchvision.models.resnet50()
 
     # Setting model name
     if args.model_name is None:
@@ -323,7 +325,7 @@ if __name__ == "__main__":
         #train lodaer
         train_loader = torch.utils.data.DataLoader(
             train_dataset, batch_size=args.train_batch_size, shuffle=True,
-            num_workers=args.workers, pin_memory=True, sampler=None)
+            num_workers=8, pin_memory=True, sampler=None)
 
         #val loader
         num_ori_val = len(ori_val_dataset)
@@ -341,11 +343,11 @@ if __name__ == "__main__":
 
         val_loader = torch.utils.data.DataLoader(
             ori_val_dataset, batch_size=args.test_batch_size, shuffle=False,
-            num_workers=args.workers, pin_memory=True, sampler=val_sampler)
+            num_workers=8, pin_memory=True, sampler=val_sampler)
         
         test_loader = torch.utils.data.DataLoader(
             ori_val_dataset, batch_size=args.test_batch_size, shuffle=False,
-            num_workers=args.workers, pin_memory=True, sampler=test_sampler)
+            num_workers=8, pin_memory=True, sampler=test_sampler)
     else:
         train_loader, val_loader = dataset_loader[args.dataset].get_train_valid_loader(
             batch_size=args.train_batch_size,

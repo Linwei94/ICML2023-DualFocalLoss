@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 import torch.backends.cudnn as cudnn
 
 # Import dataloaders
-import Data.cifar10 as cifar10
-import Data.cifar100 as cifar100
-import Data.tiny_imagenet as tiny_imagenet
+import data_utils.cifar10 as cifar10
+import data_utils.cifar100 as cifar100
+import data_utils.tiny_imagenet as tiny_imagenet
 
 # Import network architectures
 from Net.resnet_tiny_imagenet import resnet50 as resnet50_ti

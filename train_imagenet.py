@@ -17,10 +17,10 @@ import collections
 import math
 
 # Import dataloaders
-import Data.cifar10 as cifar10
-import Data.cifar100 as cifar100
-import Data.tiny_imagenet as tiny_imagenet
-import Data.imagenet as imagenet
+import data_utils.cifar10 as cifar10
+import data_utils.cifar100 as cifar100
+import data_utils.tiny_imagenet as tiny_imagenet
+import data_utils.imagenet as imagenet
 
 # Import network models
 from Net.resnet import resnet50, resnet110
