@@ -226,7 +226,8 @@ if __name__ == "__main__":
         args.learning_rate = 0.01
         args.momentum = 0.9
         args.weight_decay = 1e-4
-        args.train_batch_size = 128
+        args.train_batch_size = torch.cuda.device_count() * 128
+        args.test_batch_size = torch.cuda.device_count() * 128
         args.first_milestone = 30
         args.second_milestone = 60
 
