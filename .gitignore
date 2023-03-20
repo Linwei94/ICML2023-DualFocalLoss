@@ -1,0 +1,6 @@
+*.pt
+*.model
+data/
+20newsgroup/
+kde_ece/
+weights/
