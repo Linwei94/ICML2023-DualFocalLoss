@@ -9,3 +9,16 @@ To install requirements:
 ```setup
 conda env create -f environment.yml
 ```
+
+Citation
+If you find this repo useful, please cite our paper.
+```
+@misc{tao2023dual,
+      title={Dual Focal Loss for Calibration}, 
+      author={Linwei Tao and Minjing Dong and Chang Xu},
+      year={2023},
+      eprint={2305.13665},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
