@@ -10,7 +10,7 @@ To install requirements:
 conda env create -f environment.yml
 ```
 
-Citation
+## Citation
 If you find this repo useful, please cite our paper.
 ```
 @misc{tao2023dual,
