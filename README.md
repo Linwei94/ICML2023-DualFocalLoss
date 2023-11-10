@@ -4,7 +4,7 @@ You can find Dual Focal Loss implementation in `Losses/dual_focal_loss.py`
 
 
 ## Usage
-```
+```python
 from dual_focal_loss import DualFocalLoss
 
 criterion = DualFocalLoss()
