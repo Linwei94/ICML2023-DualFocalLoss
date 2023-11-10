@@ -1,8 +1,7 @@
 '''
-Implementation of Focal Loss.
+Implementation of Dual Focal Loss.
 Reference:
-[1]  T.-Y. Lin, P. Goyal, R. Girshick, K. He, and P. Dollar, Focal loss for dense object detection.
-     arXiv preprint arXiv:1708.02002, 2017.
+[1]  Tao, Linwei, Minjing Dong, and Chang Xu. "Dual Focal Loss for Calibration." arXiv preprint arXiv:2305.13665 (2023).
 '''
 import torch
 import torch.nn as nn
