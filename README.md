@@ -1,6 +1,6 @@
 # [Dual Focal Loss for Calibration]([url](https://arxiv.org/abs/2305.13665))
 
-You can find Dual Focal Loss implementation in `Losses/dual_focal_loss.py`
+You can find Dual Focal Loss implementation in `dual_focal_loss.py`
 
 
 ## Usage
