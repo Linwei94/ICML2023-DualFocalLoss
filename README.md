@@ -17,10 +17,12 @@ loss = criterion(logits, targets)
 ## Citation
 If you find this repo useful, please cite our paper.
 ```
-@article{tao2023calibrating,
-  title={Calibrating a deep neural network with its predecessors},
-  author={Tao, Linwei and Dong, Minjing and Liu, Daochang and Sun, Changming and Xu, Chang},
-  journal={arXiv preprint arXiv:2302.06245},
-  year={2023}
+@inproceedings{tao2023dual,
+  title={Dual focal loss for calibration},
+  author={Tao, Linwei and Dong, Minjing and Xu, Chang},
+  booktitle={International Conference on Machine Learning},
+  pages={33833--33849},
+  year={2023},
+  organization={PMLR}
 }
 ```
