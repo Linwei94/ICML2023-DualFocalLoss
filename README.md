@@ -2,6 +2,7 @@
 
 You can find Dual Focal Loss implementation in `dual_focal_loss.py`
 
+You can easily reimplment by adding dual focal loss to this [repo](https://github.com/torrvision/focal_calibration.git) (Code for the paper "Calibrating Deep Neural Networks using Focal Loss")
 
 ## Usage
 ```python
