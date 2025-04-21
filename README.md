@@ -15,7 +15,7 @@ loss = criterion(logits, targets)
 
 ```
 
-# Hyperparameter $\gamma$
+## Hyperparameter $\gamma$
 
 | Dataset     | Model        | $\gamma$ |
 |-------------|--------------|-------|
@@ -29,7 +29,7 @@ loss = criterion(logits, targets)
 | cifar10     | wide_resnet  | 2.6   |
 | cifar10     | densenet121  | 5     |
 |-------------|--------------|-------|
-| tiny_image  | resnet50  | 2.3   |
+| tiny_imagenet  | resnet50  | 2.3   |
 
 ## Citation
 If you find this repo useful, please cite our paper.
